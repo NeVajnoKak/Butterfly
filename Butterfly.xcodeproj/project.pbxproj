@@ -14,6 +14,7 @@
 		0C14EDF12C30854F003D389B /* ButterflyWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14EDF02C30854F003D389B /* ButterflyWelcome.swift */; };
 		0C14EDF42C308569003D389B /* ButterflyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14EDF32C308569003D389B /* ButterflyCollection.swift */; };
 		0C14EDF62C308578003D389B /* ButterflySingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14EDF52C308578003D389B /* ButterflySingle.swift */; };
+		0C14EDF92C3137DF003D389B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14EDF82C3137DF003D389B /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0C14EDF02C30854F003D389B /* ButterflyWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyWelcome.swift; sourceTree = "<group>"; };
 		0C14EDF32C308569003D389B /* ButterflyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyCollection.swift; sourceTree = "<group>"; };
 		0C14EDF52C308578003D389B /* ButterflySingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflySingle.swift; sourceTree = "<group>"; };
+		0C14EDF82C3137DF003D389B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		0C14EDE12C308529003D389B /* Butterfly */ = {
 			isa = PBXGroup;
 			children = (
+				0C14EDF72C3137D3003D389B /* Routes */,
 				0C14EDF22C308552003D389B /* View */,
 				0C14EDE22C308529003D389B /* ButterflyApp.swift */,
 				0C14EDE42C308529003D389B /* ContentView.swift */,
@@ -82,6 +85,14 @@
 				0C14EDF52C308578003D389B /* ButterflySingle.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0C14EDF72C3137D3003D389B /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				0C14EDF82C3137DF003D389B /* Router.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 				0C14EDE52C308529003D389B /* ContentView.swift in Sources */,
 				0C14EDF42C308569003D389B /* ButterflyCollection.swift in Sources */,
 				0C14EDE32C308529003D389B /* ButterflyApp.swift in Sources */,
+				0C14EDF92C3137DF003D389B /* Router.swift in Sources */,
 				0C14EDF12C30854F003D389B /* ButterflyWelcome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

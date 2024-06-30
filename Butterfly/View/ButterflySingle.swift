@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ButterflySingle: View {
-    @Environment(\.presentationMode) var presentationMode
+//    @Environment(\.presentationMode) var presentationMode
+    
+    @ObservedObject var router = Router()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -38,7 +41,10 @@ struct ButterflySingle: View {
                 Spacer()
                 
                 VStack {
-                    NavigationLink(destination: ButterflyCollection()) {
+                    Button (){
+                        router.navigate(to: .collection)
+//                            print("welcome")
+                    }label:  {
                         Image(systemName: "arrow.left")
                             .frame(width: 100, height: 100)
                             .background(Color(red: 0.28, green: 0.69, blue: 1))

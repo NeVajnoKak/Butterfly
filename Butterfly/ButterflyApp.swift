@@ -11,7 +11,7 @@ import SwiftUI
 struct ButterflyApp: App {
     var body: some Scene {
         WindowGroup {
-            ButterflySingle()
+            ContentView()
         }
     }
 }

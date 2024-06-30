@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ButterflyCollection: View {
-    @Environment(\.presentationMode) var presentationMode
-    
+//    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var router = Router()
     var body: some View {
         NavigationView{
             VStack {
@@ -20,7 +20,10 @@ struct ButterflyCollection: View {
                 }
                 VStack{
                     HStack{
-                        NavigationLink(destination: ButterflySingle()) {
+                        Button (){
+                            router.navigate(to: .single)
+//                            print("welcome")
+                        }label: {
                             VStack{
                                 Image(.butterflyTheBlueButterflyButterflyTransparentBackgroundAiGeneratedPng)
                                     .resizable()
@@ -33,7 +36,10 @@ struct ButterflyCollection: View {
                         .frame(width: 200, height: 200)
                         .background(Color(red: 1, green: 0.63, blue: 0.63))
                         
-                        NavigationLink(destination: ButterflySingle()) {
+                        Button (){
+                            router.navigate(to: .single)
+//                            print("welcome")
+                        }label: {
                             VStack{
                                 Image(.butterflyTheBlueButterflyButterflyTransparentBackgroundAiGeneratedPng)
                                     .resizable()
@@ -48,7 +54,10 @@ struct ButterflyCollection: View {
                     }
                     
                     HStack{
-                        NavigationLink(destination: ButterflySingle()){
+                        Button (){
+                            router.navigate(to: .single)
+//                            print("welcome")
+                        }label: {
                             VStack{
                                 Image(.butterflyTheBlueButterflyButterflyTransparentBackgroundAiGeneratedPng)
                                     .resizable()
@@ -61,7 +70,10 @@ struct ButterflyCollection: View {
                         .frame(width: 200, height: 200)
                         .background(Color(red: 1, green: 0.98, blue: 0.65))
                         
-                        NavigationLink(destination: ButterflySingle()) {
+                        Button (){
+                            router.navigate(to: .single)
+//                            print("welcome")
+                        }label:  {
                             VStack{
                                 Image(.butterflyTheBlueButterflyButterflyTransparentBackgroundAiGeneratedPng)
                                     .resizable()
@@ -79,7 +91,7 @@ struct ButterflyCollection: View {
                 }
                 VStack {
                     Button(action: {
-                        presentationMode.wrappedValue.dismiss()
+                        router.navigate(to: .welcome)
                     }) {
                         Image(systemName: "arrow.left")
                             .frame(width: 100, height: 100)

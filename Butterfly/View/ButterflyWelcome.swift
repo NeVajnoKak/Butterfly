@@ -37,19 +37,19 @@ struct ButterflyWelcome: View {
                     
                     Spacer()
                 }
-                NavigationLink(destination: ButterflyCollection()){
-                    VStack{
-                        Image(systemName: "arrow.right")
-                            .frame(width: 100, height: 100)
-                            .background(Color(red: 0.28, green: 0.69, blue: 1))
-                            .font(.system(size: 50))
-                            .cornerRadius(300)
-                            .foregroundColor(.white)
-                            
-                    }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding([.trailing,.bottom], 56)
-                }
+//                NavigationLink(destination: ButterflyCollection()){
+//                    VStack{
+//                        Image(systemName: "arrow.right")
+//                            .frame(width: 100, height: 100)
+//                            .background(Color(red: 0.28, green: 0.69, blue: 1))
+//                            .font(.system(size: 50))
+//                            .cornerRadius(300)
+//                            .foregroundColor(.white)
+//                            
+//                    }
+//                    .frame(maxWidth: .infinity, alignment: .trailing)
+//                    .padding([.trailing,.bottom], 56)
+//                }
                 
                 
                 
