@@ -11,6 +11,9 @@
 		0C14EDE52C308529003D389B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14EDE42C308529003D389B /* ContentView.swift */; };
 		0C14EDE72C30852A003D389B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C14EDE62C30852A003D389B /* Assets.xcassets */; };
 		0C14EDEA2C30852A003D389B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C14EDE92C30852A003D389B /* Preview Assets.xcassets */; };
+		0C14EDF12C30854F003D389B /* ButterflyWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14EDF02C30854F003D389B /* ButterflyWelcome.swift */; };
+		0C14EDF42C308569003D389B /* ButterflyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14EDF32C308569003D389B /* ButterflyCollection.swift */; };
+		0C14EDF62C308578003D389B /* ButterflySingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14EDF52C308578003D389B /* ButterflySingle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		0C14EDE42C308529003D389B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C14EDE62C30852A003D389B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C14EDE92C30852A003D389B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C14EDF02C30854F003D389B /* ButterflyWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyWelcome.swift; sourceTree = "<group>"; };
+		0C14EDF32C308569003D389B /* ButterflyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyCollection.swift; sourceTree = "<group>"; };
+		0C14EDF52C308578003D389B /* ButterflySingle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflySingle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		0C14EDE12C308529003D389B /* Butterfly */ = {
 			isa = PBXGroup;
 			children = (
+				0C14EDF22C308552003D389B /* View */,
 				0C14EDE22C308529003D389B /* ButterflyApp.swift */,
 				0C14EDE42C308529003D389B /* ContentView.swift */,
 				0C14EDE62C30852A003D389B /* Assets.xcassets */,
@@ -65,6 +72,16 @@
 				0C14EDE92C30852A003D389B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C14EDF22C308552003D389B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C14EDF02C30854F003D389B /* ButterflyWelcome.swift */,
+				0C14EDF32C308569003D389B /* ButterflyCollection.swift */,
+				0C14EDF52C308578003D389B /* ButterflySingle.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C14EDF62C308578003D389B /* ButterflySingle.swift in Sources */,
 				0C14EDE52C308529003D389B /* ContentView.swift in Sources */,
+				0C14EDF42C308569003D389B /* ButterflyCollection.swift in Sources */,
 				0C14EDE32C308529003D389B /* ButterflyApp.swift in Sources */,
+				0C14EDF12C30854F003D389B /* ButterflyWelcome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
